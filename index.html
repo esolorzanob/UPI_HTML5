@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Base</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/principal.js"></script>
+</head>
+
+<body>
+    <h1>Creación de perfil <img src="imgs/profile.svg" height="42" width="42"></h1>
+    <p>Para crear su perfil, por favor llene todos los campos</p>
+    <form id="form1">
+        <label>Nombre: </label>
+        <input type="text" required>
+        <br>
+        <br>
+        <label>Apellidos: </label>
+        <input type="text" required>
+        <br>
+        <br>
+        <label>Número de teléfono: </label>
+        <input type="text" pattern="\d{8}" placeholder="Ej. 87548569" required>
+        <label title="Por favor introduzca solo números">*<label>
+        <br>
+        <br>
+        <label>Correo electrónico: </label>
+        <input type="email" required>
+        <br>
+        <br>
+        <label>Dirección: </label>
+        <input type="text" required>
+        <br>
+        <br>
+        <label>Género: </label>
+        <br>
+        <input type="radio" name="genero" value="masculino"> Masculino<br>
+        <input type="radio" name="genero" value="Femenino"> Femenino<br>
+        <input type="radio" name="genero" value="otro"> Otro
+        <br>
+        <br>
+        <label>Edad:</label>
+        <input type="number" required min="1" max="100" id="edad">
+        <br>
+        <br>
+        <label>Fecha de nacimiento</label>
+        <input type="date" required id="fecha">
+        <br>
+        <br>
+        <button onclick="dateCheck()">Salvar</button>
+    </form>
+</body>
+
+</html>
