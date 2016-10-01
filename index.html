@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <h1>Creación de perfil <img src="imgs/profile.svg" height="42" width="42"></h1>
+    <h1 id="titulo">Creación de perfil <img src="imgs/profile.svg" class="logo"></h1>
+	<div class="formContainer">
     <p>Para crear su perfil, por favor llene todos los campos</p>
     <form id="form1">
         <label>Nombre: </label>
-        <input type="text" required>
+        <input type="text"pattern="[A-Z]" required>
         <br>
         <br>
         <label>Apellidos: </label>
@@ -35,7 +36,7 @@
         <br>
         <label>Género: </label>
         <br>
-        <input type="radio" name="genero" value="masculino"> Masculino<br>
+        <input type="radio" name="genero" value="masculino" selected> Masculino<br>
         <input type="radio" name="genero" value="Femenino"> Femenino<br>
         <input type="radio" name="genero" value="otro"> Otro
         <br>
@@ -48,8 +49,9 @@
         <input type="date" required id="fecha">
         <br>
         <br>
-        <button >Salvar</button>
+        <button id="button">Salvar</button>
     </form>
+	</div>
 </body>
 
 </html>

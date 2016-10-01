@@ -1,0 +1,23 @@
+.logo{
+	width: 42px;
+	height: 42px;
+}
+
+#titulo{
+	text-align: center;
+	color: red;
+}
+
+.formContainer{
+	margin-left: 45px;
+	
+}
+
+#button {
+	color: #3f7ee2;
+	background-color: black;	
+}
+
+#button:hover{
+	background-color: white;
+}
