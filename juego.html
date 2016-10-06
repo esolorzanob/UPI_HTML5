@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de preguntas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/juego.js"></script>
+</head>
+
+<body>
+    <h1 id="titulo">Adivina adivinador! </h1>
+
+    <div class="formContainer">
+        <p>¿De que color es el cielo?</p>
+        <form id="form1">
+
+            <label class="respuesta">Respuesta: </label>
+            <div class="radioContainer">
+                <label>
+                  <input type="radio" name="color" value="rojo" class="radio" id="1">
+                  Rojo                  
+                </label>
+
+                <label>
+                    <input type="radio" name="color" value="celeste" class="radio" id="2">
+                    Celeste                    
+                </label>
+
+                <label>                   
+                     <input type="radio" name="color" value="amarillo" class="radio" id="3">
+                      Amarillo
+                 </label>
+
+                <label>                   
+                     <input type="radio" name="color" value="cafe" class="radio" id="4">
+                      Café
+                 </label>
+            </div>
+
+            <button type="button" id="button" onclick="respuesta()">Responder</button>
+        </form>
+          <p id="resultado"></p>
+    </div>
+  
+</body>
+
+</html>
