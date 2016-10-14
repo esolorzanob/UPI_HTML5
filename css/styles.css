@@ -46,3 +46,7 @@
 	font-size: 2em;
 }
 
+.monitorContainer {
+	float: right;
+	margin-right: 150px;
+}

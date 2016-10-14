@@ -10,35 +10,38 @@
 
 <body>
     <h1 id="titulo">Creación de perfil <img src="imgs/profile.svg" class="logo"></h1>
+    <div class="monitorContainer" >
+        <textarea rows="20" cols="100" id="monitor" ></textarea>
+    </div>
 	<div class="formContainer">
     <p>Para crear su perfil, por favor llene todos los campos</p>
-    <form id="form1">
+    <form id="form1" onsubmit="return convertir()">
         <label>Nombre: </label>
-        <input type="text"pattern="[A-Z]" required>
+        <input type="text" pattern="[A-Za-z]+" required id="nombre">
         <br>
         <br>
         <label>Apellidos: </label>
-        <input type="text" required>
+        <input type="text" id="apellidos" required>
         <br>
         <br>
         <label>Número de teléfono: </label>
-        <input type="text" pattern="\d{8}" placeholder="Ej. 87548569" required>
+        <input type="text" pattern="\d{8}" placeholder="Ej. 87548569" required id="tel">
         <label title="Por favor introduzca solo números">*<label>
         <br>
         <br>
         <label>Correo electrónico: </label>
-        <input type="email" placeholder="Ej nombre@dominio.com" required >
+        <input type="email" placeholder="Ej nombre@dominio.com" required id="correo" >
         <br>
         <br>
         <label>Dirección: </label>
-        <input type="text" required>
+        <input type="text" required id="direccion">
         <br>
         <br>
         <label>Género: </label>
         <br>
-        <input type="radio" name="genero" value="masculino" selected> Masculino<br>
-        <input type="radio" name="genero" value="Femenino"> Femenino<br>
-        <input type="radio" name="genero" value="otro"> Otro
+        <input type="radio" name="genero" value="masculino" id="masc"> Masculino<br>
+        <input type="radio" name="genero" value="Femenino" id="fem"> Femenino<br>
+        <input type="radio" name="genero" value="otro" id="otro"> Otro
         <br>
         <br>
         <label>Edad:</label>
@@ -49,7 +52,7 @@
         <input type="date" required id="fecha">
         <br>
         <br>
-        <button id="button">Salvar</button>
+        <input type="submit" id="button" value="Salvar" >
     </form>
 	</div>
 </body>
