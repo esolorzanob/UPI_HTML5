@@ -4,7 +4,7 @@ function respuesta() {
 		document.getElementById("resultado").removeChild(hijos[0]);
 	}
 	
-    var selected = document.getElementById("2").checked;
+    
 	var contador = 0;
 	var elements = document.getElementsByClassName("radio");
 	for (var i = 0; i < elements.length; ++i) {

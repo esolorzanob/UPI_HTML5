@@ -1,7 +1,7 @@
 var convertir = function () {
-    if(document.getElementById('masc').checked){
+    if(checked){
         var genero = "Masculino";
-    }else if (document.getElementById('fem').checked){
+    }else if (checked){
         var genero = "Femenino";
     }else{
         var genero = "Otro";
@@ -18,15 +18,10 @@ var convertir = function () {
     }
     document.getElementById('monitor').value = JSON.stringify(persona, null, 4);
     
-    sessionStorage.persona = JSON.stringify(persona);
+    
     
     return false;
 }
 
-var mostrar = function(){
-    document.getElementById('monitor').value = "";
-    var persona = JSON.parse(sessionStorage.getItem("persona"));
-    document.getElementById('monitor').value = JSON.stringify(persona, null, 4);
-}
 
-//window.onload = mostrar;
+

@@ -5,35 +5,36 @@
     <meta charset="UTF-8">
     <title>Proyecto Base</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/principal.js"></script>
+    <script src="js/temporal.js"
 </head>
 
 <body>
     <h1 id="titulo">Creación de perfil <img src="imgs/profile.svg" class="logo"></h1>
     <div class="monitorContainer" >
-        <textarea rows="20" cols="100" id="monitor" ></textarea>
+        <textarea rows="20" cols="50" id="monitor" ></textarea>
         <br>
         <br>
         <a href="siguiente.html">Siguiente</a>
+		
     </div>
 	<div class="formContainer">
     <p>Para crear su perfil, por favor llene todos los campos</p>
-    <form id="form1" onsubmit="return pruebaJS()">
+    <form id="form1" onsubmit="return convertir()">
         <label>Nombre: </label>
-        <input type="text" pattern="[A-Za-z]+" required id="nombre">
+        <input type="text" pattern="[A-Za-z]+"  id="nombre">
         <br>
         <br>
         <label>Apellidos: </label>
-        <input type="text" id="apellidos" required>
+        <input type="text" id="apellidos" >
         <br>
         <br>
         <label>Número de teléfono: </label>
-        <input type="text" pattern="\d{8}" placeholder="Ej. 87548569" required id="tel">
+        <input type="text" pattern="\d{8}" placeholder="Ej. 87548569" required >
         <label title="Por favor introduzca solo números">*<label>
         <br>
         <br>
         <label>Correo electrónico: </label>
-        <input type="email" placeholder="Ej nombre@dominio.com" required id="correo" >
+        <input type="email" >
         <br>
         <br>
         <label>Dirección: </label>
@@ -48,16 +49,17 @@
         <br>
         <br>
         <label>Edad:</label>
-        <input type="number" required min="1" max="100" id="edad">
+        <input type="number" required min="1" max="100">
         <br>
         <br>
         <label>Fecha de nacimiento</label>
-        <input type="date" required id="fecha">
+        <input type="text"  id="fecha">
         <br>
         <br>
-        <input type="submit" id="button" value="Salvar" >
+        
     </form>
-	</div>
+    <input type="submit" id="button" value="Salvar" >
+	
 </body>
 
 </html>
