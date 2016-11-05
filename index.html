@@ -5,61 +5,64 @@
     <meta charset="UTF-8">
     <title>Proyecto Base</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/temporal.js"
+    <script src="js/temporal.js"></script>
 </head>
 
 <body>
     <h1 id="titulo">Creación de perfil <img src="imgs/profile.svg" class="logo"></h1>
-    <div class="monitorContainer" >
-        <textarea rows="20" cols="50" id="monitor" ></textarea>
+    <div class="monitorContainer">
+        <textarea rows="20" cols="50" id="monitor"></textarea>
         <br>
         <br>
         <a href="siguiente.html">Siguiente</a>
-		
+
     </div>
-	<div class="formContainer">
-    <p>Para crear su perfil, por favor llene todos los campos</p>
-    <form id="form1" onsubmit="return convertir()">
-        <label>Nombre: </label>
-        <input type="text" pattern="[A-Za-z]+"  id="nombre">
-        <br>
-        <br>
-        <label>Apellidos: </label>
-        <input type="text" id="apellidos" >
-        <br>
-        <br>
-        <label>Número de teléfono: </label>
-        <input type="text" pattern="\d{8}" placeholder="Ej. 87548569" required >
-        <label title="Por favor introduzca solo números">*<label>
-        <br>
-        <br>
-        <label>Correo electrónico: </label>
-        <input type="email" >
-        <br>
-        <br>
-        <label>Dirección: </label>
-        <input type="text" required id="direccion">
-        <br>
-        <br>
-        <label>Género: </label>
-        <br>
-        <input type="radio" name="genero" value="masculino" id="masc"> Masculino<br>
-        <input type="radio" name="genero" value="Femenino" id="fem"> Femenino<br>
-        <input type="radio" name="genero" value="otro" id="otro"> Otro
-        <br>
-        <br>
-        <label>Edad:</label>
-        <input type="number" required min="1" max="100">
-        <br>
-        <br>
-        <label>Fecha de nacimiento</label>
-        <input type="text"  id="fecha">
-        <br>
-        <br>
-        
-    </form>
-    <input type="submit" id="button" value="Salvar" >
-	
+    <div class="formContainer">
+        <p>Para crear su perfil, por favor llene todos los campos</p>
+        <form id="form1" onsubmit="return convertir()" novalidate>
+            <label>Nombre: </label>
+            <input type="text" pattern="[A-Za-z]+" id="nombre">
+            <br>
+            <br>
+            <label>Apellidos: </label>
+            <input type="text" id="apellidos">
+            <br>
+            <br>
+            <label>Número de teléfono: </label>
+            <input type="text" pattern="\d{8}" placeholder="Ej. 87548569"  id="tel" required>
+            <label title="Por favor introduzca solo números">*
+                <label>
+                    <br>
+                    <br>
+                    <label>Correo electrónico: </label>
+                    <input type="email" id="correo">
+                    <br>
+                    <br>
+                    <label>Dirección: </label>
+                    <input type="text" required id="direccion">
+                    <br>
+                    <br>
+                    <label>Género: </label>
+                    <br>
+                    <input type="radio" name="genero" value="masculino" id="masc"> Masculino
+                    <br>
+                    <input type="radio" name="genero" value="Femenino" id="fem"> Femenino
+                    <br>
+                    <input type="radio" name="genero" value="otro" id="otro"> Otro
+                    <br>
+                    <br>
+                    <label>Edad:</label>
+                    <input type="number" required min="1" max="100" id="edad">
+                    <br>
+                    <br>
+                    <label>Fecha de nacimiento</label>
+                    <input type="date" id="fecha">
+                    <br>
+                    <br>
+                    <input type="submit" id="button" value="Salvar">
+        </form>
+    </div>
+
 </body>
 
 </html>
