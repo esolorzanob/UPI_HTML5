@@ -40,5 +40,11 @@ function mostrar () {
      document.getElementById("email").value = persona.correo;
 }
 
+function escribir() {
+    var nombre = "Juan";
+    var apellido = "Perez";
+    document.getElementById('monitor').value = "mi nombre es " + nombre + "\nMi apellido es " + apellido;
+}
+
 
 
