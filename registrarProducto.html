@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Producto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/registrarProducto.js"></script>
+</head>
+
+<body>
+    <h1 id="titulo">Registrar Producto <img src="imgs/profile.svg" class="logo"></h1>
+    <div class="monitorContainer">
+        <p>Productos Registrados</p>
+        <textarea rows="20" cols="50" id="monitor"></textarea>
+        <br>
+        <br>
+      
+
+    </div>
+    <div class="formContainer">
+        <p>Para crear el producto, por favor llene todos los campos</p>
+        <form id="form1" onsubmit="return registrar()" novalidate>
+            <label>Nombre: </label>
+            <input type="text" pattern="[A-Za-z]+" id="nombre" class="propiedad">
+            <br>
+            <br>
+            <label>Precio: </label>
+            <input type="number" id="precio" class="propiedad">
+            <br>
+            <br>
+            <label>Categoría: </label>
+            <input type="text" id="categoria" required class="propiedad">            
+            <br>
+            <br>
+            <label>Marca: </label>
+            <input type="text" id="marca" class="propiedad">
+            <br>
+            <br>               
+            <input type="submit" id="button" value="Registrar">
+        </form>
+        <br>
+        
+        <button onclick="guardar()">Guardar</button>
+    </div>
+
+</body>
+
+</html>
