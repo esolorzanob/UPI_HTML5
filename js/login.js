@@ -1,6 +1,6 @@
 window.onload = function(){
 	var login = {
-		usuario: "esteban",
+		"usuario": "esteban",
 		pass: "123456"
 	}
 	var login2 = {
@@ -17,6 +17,8 @@ window.onload = function(){
 	}
 	var users = [login, login2, login3, login4];
 	
+	
+	
 	sessionStorage.setItem("login", JSON.stringify(users));
 }
 
@@ -32,6 +34,8 @@ function login(){
 			var usuarioCorrecto = login[i];
 		}		
 	}
+	
+	
 	if (loginCorrecto == false){
 		alert("Usuario Incorrecto");
 	}else{
