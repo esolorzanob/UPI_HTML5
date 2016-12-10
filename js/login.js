@@ -34,8 +34,6 @@ function login(){
 			var usuarioCorrecto = login[i];
 		}		
 	}
-	
-	
 	if (loginCorrecto == false){
 		alert("Usuario Incorrecto");
 	}else{
@@ -43,19 +41,8 @@ function login(){
 			alert("Contraseña incorrecta");
 		}else{
 			alert("Login exitoso!");
+			window.location.href = "registrarProducto.html";
 		}
 	}
-	
-	/*	
-	var usuarioActual = document.getElementById('usuarioActual').value;
-	var passActual = document.getElementById('passActual').value;
-	if(usuarioActual != login.usuario){
-		alert("Usuario incorrecto");
-	}else if(passActual != login.pass){
-		alert("contraseña incorrecta");
-	}else{
-		alert("Login exitoso!");
-	}
-	*/
 	return false;
 }
