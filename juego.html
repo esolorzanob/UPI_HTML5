@@ -18,17 +18,17 @@
             <label class="respuesta">Respuesta: </label>
             <div class="radioContainer">
                 <label>
-                  <input type="radio" name="color" value="rojo" >
+                  <input type="radio" name="color" class="radio" value="rojo" >
                   Rojo                  
                 </label>
 
                 <label>
-                    <input type="radio" name="color" value="celeste" >
+                    <input type="radio" name="color" class="radio" value="celeste" >
                     Celeste                    
                 </label>
 
                 <label>                   
-                     <input type="radio" name="color" value="amarillo" class="radio" id="3"
+                     <input type="radio" name="color" value="amarillo" class="radio" id="3">
                       Amarillo
                  </label>
 
@@ -40,7 +40,7 @@
 
             
         </form>
-        <button type="button" id="button" onclick="respuesta()">Responder</button>
+        <button type="button" id="button" onclick="respuesta(0)">Responder</button>
           <p id="resultado"></p>
     </div>
   
