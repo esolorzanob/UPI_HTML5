@@ -1,0 +1,40 @@
+
+.formContainer{
+	margin-left: 200px;
+	
+}
+
+
+#button {
+	
+	color: white;
+	background-color: blue;
+	margin-top: 25px;	
+}
+
+#button:hover{
+	color: black;
+	background-color: white;
+}
+
+#titulo{
+	padding-bottom: 50px;
+}
+.radioContainer label{
+	display: block;	
+}
+
+.respuesta {
+	display: block;
+	padding-bottom: 25px;
+}
+.correcto {
+	color: lightgreen;
+}
+.incorrecto {
+	color: red;
+}
+#resultado{
+	font-size: 2em;
+}
+
