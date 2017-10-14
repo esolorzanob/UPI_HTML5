@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de preguntas 3</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <script src="js/juego.js"></script>
+</head>
+
+<body>
+        <div class="imagenFondo">
+  <img src="img/fondo.jpg">
+</div>
+<header id="tituloContainer">
+<a href="index.html"><img src="img/logo.png" class="logo" ></a>
+<h1 class="textoTitulo">Que tanto conoces de los video juegos</h1>
+</header>
+
+
+    <div class="formContainer">
+        <p class="videoP">¿Todos Hemos jugado el siguiente video si muy lindo y muy facil de jugar pero Sabes cuanto fue lanzado al publico este juego?</p>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/cBMrGewFrLM" frameborder="0" allowfullscreen></iframe>
+        <form id="form1">
+
+            <label class="respuesta">Respuesta: </label>
+            <div class="radioContainer">
+                <label>
+                  <input type="radio" name="color" class="radio" value="rojo" >
+                  10 de enero  de 2007                
+                </label>
+
+                <label>
+                    <input type="radio" name="color" class="radio" value="celeste" >
+                    15 de Diciembre de 2010                    
+                </label>
+
+                <label>                   
+                     <input type="radio" name="color" value="amarillo" class="radio" id="3">
+                     20 de julio de 2007
+                 </label>
+
+                <label>                   
+                     <input type="radio" name="color" value="cafe" class="radio" id="4">
+                       5 de mayo de 2009
+                 </label>
+            </div>
+
+            
+        </form>
+        <button type="button" id="button" onclick="respuesta(2)">Responder</button>
+          <p id="resultado"></p>
+
+            <div class="siguiente">
+             <a href="pregunta 4.html"><p>Siguiente</p></a>
+              </div>
+    </div>
+    <div class="barra">
+<label>Pregunta:</label>
+  <progress value="3" max="10">
+</div>
+</body>
+
+</html>

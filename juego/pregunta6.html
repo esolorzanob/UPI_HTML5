@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de preguntas 6</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <script src="js/juego.js"></script>
+</head>
+
+<body>
+        <div class="imagenFondo">
+  <img src="img/fondo.jpg">
+</div>
+<header id="tituloContainer">
+<a href="index.html"><img src="img/logo.png" class="logo" ></a>
+<h1 class="textoTitulo">Que tanto conoces de los video juegos</h1>
+</header>
+
+
+    <div class="formContainer">
+        <p class="videoP">El popular juego Grand Theft Auto a sido un exito a travez del tiempo pero sabes cuantas entregas del juego hay hasta el momento</p>
+     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/TTB6eEHCAko" frameborder="0" allowfullscreen></iframe>
+
+            <label class="respuesta">Respuesta: </label>
+            <div class="radioContainer">
+                <label>
+                  <input type="radio" name="color" class="radio" value="rojo" >
+                  16               
+                </label>
+
+                <label>
+                    <input type="radio" name="color" class="radio" value="celeste" >
+                    10                    
+                </label>
+
+                <label>                   
+                     <input type="radio" name="color" value="amarillo" class="radio" id="3">
+                     13
+                 </label>
+
+                <label>                   
+                     <input type="radio" name="color" value="cafe" class="radio" id="4">
+                       5
+                 </label>
+            </div>
+
+            
+        </form>
+        <button type="button" id="button" onclick="respuesta(5)">Responder</button>
+          <p id="resultado"></p>
+              <div class="siguiente">
+             <a href="pregunta 7.html"><p>Siguiente</p></a>
+              </div>
+
+    </div>
+      </div>
+    <div class="barra">
+<label>Pregunta:</label>
+  <progress value="6" max="10">
+</div>
+</body>
+
+</html>

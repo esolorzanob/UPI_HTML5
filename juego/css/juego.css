@@ -1,0 +1,166 @@
+.formContainer{
+	margin-left: 460px;
+	margin-top: 120px;
+	font-size: 20px;
+}
+
+
+#button {
+	
+	color: white;
+	background-color: blue;
+	margin-top: 25px;	
+}
+
+#button:hover{
+	color: black;
+	background-color: white;
+}
+
+#titulo{
+	padding-bottom: 50px;
+}
+.radioContainer label{
+	display: block;	
+}
+
+.respuesta {
+	display: block;
+	padding-bottom: 25px;
+}
+.correcto {
+	color: lightgreen;
+}
+.incorrecto {
+	color: red;
+}
+#resultado{
+	font-size: 2em;
+}
+.linksContainer{
+	margin-left: 35%;
+	margin-top:90px;
+	font-size: 20px;
+}
+
+.linksContainer a{
+	text-decoration: none;
+	margin-left: 100px;
+	background-color: #FF7543;
+	padding: 20px;
+	color: black;
+
+}
+
+.linksContainer a:hover{
+	text-decoration: none;
+	margin-left: 100px;
+	background-color: #000000;
+	padding: 20px;
+	color: white;
+}
+.imagenFondo{
+	position:fixed;
+	top: 0;
+	left:0;
+	z-index: -1;
+}
+.imagenFondo img{
+	height:100%;
+	width:100%;
+	opacity:0.6;
+	
+}
+.logo{
+	position: absolute;
+	height: 170px;
+	width: 170px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.textoTitulo{
+	margin-left: 350px;
+	padding-top:50px;
+	color: white;
+}
+
+#principal{
+	background-color: white;
+	height: 250px;
+	margin-left: 150px;
+	margin-top: 120px;
+	margin-right: 150px;
+
+}
+#textoPrincipal {
+ text-align: center;
+ padding-top:  30px;	
+}
+#caja{
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.textoparrafo  {
+	font-size:20px;
+	text-align: center;
+
+}
+.siguiente{
+	
+	width: 100px;
+	height:80px;
+	float: right;
+	margin-top: -210px;
+	margin-right: 200px;
+	text-decoration: none;
+}
+.siguiente a { 
+	font-size: 150%;
+    text-decoration: none;
+    color: black;
+ }
+.barra{ 
+	margin-left: 200px;
+	font-size: 25px;
+ }
+ .barra progress { 
+   -webkit-appearance: none;
+ 	appearance: none;
+ 	width: 350px;
+ 	height: 30px;
+ 	margin-top: 2%;
+    
+  }
+ progress::-webkit-progress-bar {
+ background-color: #FFF;
+ border-radius: 2px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress::-webkit-progress-value {
+	background-color:#FF7543;
+}
+.imagen{
+	width: 400px;
+	height: 400px;
+	margin-left: -20px;
+}
+.imagenp{
+	margin-left: -50px;
+}
+.video{
+	margin-left: -100px;
+	margin-top: 20px;
+}
+.videoP{
+	margin-left: -290px;
+
+}
+.espacio{
+	margin-left: 260px;
+}
+.audio{
+	margin-left: -280px;
+}
+#tex{
+	margin-left: -280px;
+}

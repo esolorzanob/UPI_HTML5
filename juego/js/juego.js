@@ -1,6 +1,6 @@
-var respuestas = [1,3,2,1,0,3];
+var respuestas = [2,2,3,1,3,2,0,3,0,1];
 function respuesta(number) {
-	var hijos = document.getElementById("resultado").childNodes;
+	var hijos = $("#resultado").children();
 	if (hijos.length > 0){
 		document.getElementById("resultado").removeChild(hijos[0]);
 	}
